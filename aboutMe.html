@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        *{
+           margin: 0px;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        .navbar{
+            margin-top: 15px;
+        }
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        li {
+            float: left;
+            margin-bottom: 30px;
+        }
+        li a {
+            text-decoration: none;
+            background: plum;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: large;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            clear: left;
+            background: rgb(185, 200, 231);
+        }
+        .gallery{
+            margin-top: 20px;
+        }
+        .gallery .item{
+            width: 50%;
+            height: 800px;
+            float: left;
+            overflow: hidden;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+        .gallery .item img{
+            width: 100%;
+            height: auto;
+            object-fit: fill;
+        }
+        .details{
+            clear: left;
+        }
+        .footer{
+            background: gray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutMe.html">About me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+            <h1> DERLADIE</h1>
+            <p>Herbal extract care cream</p>
+        </div>
+        <div class="gallery">
+            <div class="item"><img src="./img/product/derladie.jpg" alt=""></div>
+            <div class="item"><img src="./img/product/derladie2.jpg" alt=""></div>
+        </div>
+        <div class="details">
+            <h3>Ingredients</h3>
+            <p> green tea extract, tea tree oil, herbal extract</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright Chinchin ɳ </p>
+    </div>
+</body>
+</html>
