@@ -91,15 +91,14 @@ nav.navbar li a {
     object-fit: fill;
 }
 .product-list{
-    margin-top: 20px;
+    margin: 20px auto;
 }
 .product-list .item{
     width: 50%;
     height: 750px;
     float: left;
     overflow: hidden;
-    margin-bottom: 30px;
-    margin-top: 15px;
+    margin: 15px 0;
 }
 .product-list .item img {
     padding: 25px;
