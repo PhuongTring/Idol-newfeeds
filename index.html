@@ -23,15 +23,16 @@
     <div class="container">
         <div class="main-content">
             <h1>Phung Phuong Trinh</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam atque magnam nemo? Hic similique corrupti
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam atque magnam nemo? Hic similique
+                corrupti
                 cumque dolor distinctio fuga quos, perferendis qui debitis soluta, molestiae, praesentium quo sapiente
                 consectetur omnis.</p>
         </div>
         <div class="form-area">
-            <form action="/aboutMe.html" method="post">
+            <form action="" method="post" onsubmit="event.preventDefault(); handleClick()">
                 <label for="">Enter your name</label> <br><br>
-                <input type="text">
-                <button type="submit">Send</button>
+                <input type="text" id="userName">
+                <button type="button" onclick="">Send</button>
             </form>
         </div>
         <div class="shapes">
@@ -41,7 +42,9 @@
             <div class="yellow"></div>
         </div>
         <div class="details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad autem consequatur nam pariatur facilis repudiandae laboriosam, dolor odit repellendus soluta porro enim culpa corporis laudantium perspiciatis reprehenderit corrupti explicabo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad autem consequatur nam pariatur facilis
+                repudiandae laboriosam, dolor odit repellendus soluta porro enim culpa corporis laudantium perspiciatis
+                reprehenderit corrupti explicabo!</p>
         </div>
         <div class="gallery">
             <div class="item"><img src="./img/idol/15.01.24_음악중심_김소현_퇴근길_02.jpg" alt=""></div>
@@ -58,6 +61,16 @@
     <div class="footer">
         <p>Copyright Chinchin ɳ </p>
     </div>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+        }
+        function handleClick() {
+            let userName = document.getElementById("userName").value;
+            alert(userName);
+        }
+    </script>
 </body>
+
 
 </html>
