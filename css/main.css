@@ -5,6 +5,7 @@
 }
 body{
     background: #fee8e7;
+    text-align: center;
 }
 
 nav.navbar ul {
@@ -115,9 +116,11 @@ nav.navbar li a {
     text-align: center;
     clear: left;
 }
-.learning-list{
+ul.learning-list{
     margin: 10px 30px;
+    list-style-type: none;
 }
+
 .main-content h1{
     color:rgb(0, 2, 161);
 }

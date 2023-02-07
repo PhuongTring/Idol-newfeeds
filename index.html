@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>Home</title>
 </head>
 
@@ -29,11 +30,14 @@
                 consectetur omnis.</p>
         </div>
         <div class="form-area">
-            <form action="" method="post" onsubmit="event.preventDefault(); handleClick()">
-                <label for="">Enter your name</label> <br><br>
+            <form action="" method="post" onsubmit="handleSubmit(event)">
+                <label for="">Enter your name</label>
                 <input type="text" id="userName">
-                <button type="button" onclick="">Send</button>
+                <label for="">Enter your age</label>
+                <input type="number" id="userAge">
+                <button type="submit" onclick="">Send</button>
             </form>
+            <h3 id="render"></h3>
         </div>
         <div class="shapes">
             <div class="blue"></div>
@@ -62,12 +66,12 @@
         <p>Copyright Chinchin ɳ </p>
     </div>
     <script>
-        function handleSubmit(e) {
-            e.preventDefault();
-        }
-        function handleClick() {
-            let userName = document.getElementById("userName").value;
-            alert(userName);
+        function handleSubmit(event){
+            event.preventDefault();
+            let userName=document.getElementById("userName").value;
+            let userAge=document.getElementById("userAge").value;
+            let render=document.getElementById("render");
+            render.innerHTML=`Hi ${userName} your age is ${userAge}`;
         }
     </script>
 </body>
