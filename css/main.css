@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: #fee8e7;
+}
 
 nav.navbar ul {
     margin-left: 10px;
@@ -18,7 +21,8 @@ nav.navbar li {
 
 nav.navbar li a {
     text-decoration: none;
-    background: plum;
+    background: rgb(232, 44, 78);
+    color: white;
     padding: 10px 20px;
     font-weight: bold;
     font-style: italic;
@@ -68,7 +72,6 @@ nav.navbar li a {
     margin: auto;
     padding: 20px;
     width: 80%;
-    background-color: rgb(243, 239, 235);
     clear: left;
 }
 
@@ -116,9 +119,9 @@ nav.navbar li a {
     margin: 10px 30px;
 }
 .main-content h1{
-    color:brown;
+    color:rgb(0, 2, 161);
 }
 
 .main-item h3{
-    color:rgb(134, 47, 47);
+    color:rgb(0, 2, 161);
 }

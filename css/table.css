@@ -1,16 +1,24 @@
-table{
-    background: rgb(227, 83, 83);
-    border: 3px double red;
+table {
+    border: 3px solid rgb(7, 7, 7);
     border-collapse: collapse;
+    font-size: large;
     margin: 20px auto;
     text-align: center;
-    width: 60%;
+    width: 75%;
 }
-tr:nth-child(even){
-    background-color: #fff;
-}
-th, td{
-    border: 2px solid rgb(9, 9, 9);
+
+th,
+td {
+    border: 3px solid rgb(7, 7, 7);
     padding: 15px;
-    
+}
+
+th {
+    background: #28a1d5;
+    color: #ffffff;
+}
+
+td {
+    background: #fbefef;
+    color: black;
 }
