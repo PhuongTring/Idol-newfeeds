@@ -25,9 +25,12 @@ nav.navbar li a {
     background: rgb(232, 44, 78);
     color: white;
     padding: 10px 20px;
-    font-weight: bold;
     font-style: italic;
     font-size: large;
+}
+nav.navbar li a.active {
+    color: rgb(0, 2, 161);
+    font-weight: bold;
 }
 
 .main-content {
