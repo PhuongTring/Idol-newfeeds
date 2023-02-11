@@ -4,6 +4,8 @@ let inputYear = document.getElementById("userYear");
 
 let render = document.getElementById("render");
 let renderItem = null;
+let formNumerology = document.getElementById("frm-numerology");
+formNumerology.onsubmit = handleSubmit;
 
 function handleSubmit(event) {
   event.preventDefault();
