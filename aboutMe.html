@@ -9,15 +9,15 @@
     
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a class="active" href="./aboutMe.html">About me</a></li>
-            <li><a href="./numerology.html">Numerology</a></li>
-            <li><a href="./learningplan.html">Learning Plan</a></li>
-            <li><a href="./japanese.html">Japanese</a></li>
-            <li><a href="./english.html">English</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./aboutMe.html">About me</a></li>
+            <li><a class="nav-link" href="./numerology.html">Numerology</a></li>
+            <li><a class="nav-link" href="./learningplan.html">Learning Plan</a></li>
+            <li><a class="nav-link" href="./japanese.html">Japanese</a></li>
+            <li><a class="nav-link" href="./english.html">English</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -37,5 +37,19 @@
     <div class="footer">
         <p>Copyright Chinchin ɳ </p>
     </div>
+    <script>
+        let navbar=document.getElementById("navbar");
+        console.log(navbar);
+        const navLinks = document.getElementsByClassName("nav-link");
+        console.log("dia chi href cua the a dau tien, the home", navLinks[0].href);
+        let url = window.location.href;
+        console.log("dia chi hien tai cua cua so trinh duyet", url);
+        for(let i = 0; i < navLinks.length; i++) {
+            navLinks[i].classList.remove("active");
+            if(navLinks[i].href == url.href){
+                navLinks[i].classList.add("active");
+            }
+        }
+    </script>
 </body>
 </html>
