@@ -77,23 +77,8 @@
         <p>Copyright Chinchin ɳ </p>
     </div>
     <script src="./js/form.js"></script>
-    <script>
-        let navbar=document.getElementById("navbar");
-        console.log(navbar);
-        const navLinks = document.getElementsByClassName("nav-link");
-        console.log("dia chi href cua the a dau tien, the home", navLinks);
-        let url = window.location.href;
-        console.log("dia chi hien tai cua cua so trinh duyet", url);
-        console.log(url==navLinks[0].href)
-        for(let i = 0; i < navLinks.length; i++) {
-            //navLinks[i].classList.remove("active");
-            if(navLinks[i].href == url.href){
-                navLinks[i].classList.add("active");
-                console.log("oke")
-            }
-        }
-    </script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 
-</html>
+</html> 
